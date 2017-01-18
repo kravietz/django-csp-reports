@@ -2,6 +2,7 @@
 import json
 
 # LIBRARIES
+from django.contrib.postgres.fields import JSONField
 from django.db import models
 from django.utils.html import escape
 from django.utils.safestring import mark_safe
@@ -14,7 +15,7 @@ class CSPReport(models.Model):
 
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-    json = models.TextField()
+    json = JSONField()
 
     @property
     def data(self):
