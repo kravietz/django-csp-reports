@@ -34,7 +34,7 @@ Supports all versions of Django (up to 1.10 at time of writing).  For Django <=1
     * `CSP_REPORTS_SAVE` (`bool` defaults to `True`).  Determines whether the reports are saved to the database.
     * `CSP_REPORTS_ADDITIONAL_HANDLERS` (`iterable` defaults to `[]`). Each value should be a dot-separated string path to a function which you want be called when a report is received. Each function is passed the `HttpRequest` of the CSP report.
     * `CSP_REPORTS_LOGGER_NAME` (`str` defaults to `CSP Reports`). Specifies the logger name that will be used for logging CSP reports, if enabled.
-6. Enjoy.
+6. Add `report-uri /reports/` directive to your CSP header to start receiving reports.
 
 
 ### TODO
