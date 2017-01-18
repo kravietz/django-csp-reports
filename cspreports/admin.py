@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # SOCKET SHARE
-from cspreports.models import CSPReport
+from .models import CSPReport
 
 
 class CSPReportAdmin(admin.ModelAdmin):
